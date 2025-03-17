@@ -59,6 +59,22 @@ function addSubmitListener() {
 }
 
 
+function addEditListener() {
+    const editForm = document.getElementById("edit-ramen-form");
+    editForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (selectedRamen) {
+            selectedRamen.rating = document.getElementById("edit-rating").value;
+            selectedRamen.comment = document.getElementById("edit-comment").value;
+
+            handleClick(selectedRamen); 
+            editForm.reset();
+        }
+    });
+}
+
+
 
 
 
@@ -67,6 +83,7 @@ function addSubmitListener() {
 function main() {
     displayRamens();
     addSubmitListener();
+    addEditListener();
     
 }
 
