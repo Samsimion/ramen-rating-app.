@@ -10,10 +10,6 @@ let selectedRamen = null;
 
 
 
-
-
-//<!--ABCDEFGHIJKLMNOPQRSTUVWXYZ-->
-
 function displayRamens(){
     const menu = document.getElementById("ramen-menu");
     menu.innerHTML = "";
@@ -100,6 +96,7 @@ function main() {
     displayRamens();
     addSubmitListener();
     addEditListener();
+    addDeleteListener();
     
 }
 
