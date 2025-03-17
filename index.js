@@ -80,6 +80,19 @@ function addEditListener() {
 }
 
 
+function addDeleteListener() {
+    const deleteButton = document.getElementById("delete-ramen");
+    deleteButton.addEventListener("click", function () {
+        if (selectedRamen) {
+            const index = ramens.findIndex(ramen => ramen.id === selectedRamen.id);
+            if (index !== -1) {
+                ramens.splice(index, 1);
+                displayRamens();
+            }
+        }
+    });
+}
+
 
 
 // Initialize the app
