@@ -35,70 +35,18 @@ function handleClick(ramen){
     document.getElementById("ramen-restaurant").textContent = ramen.restaurant;
     document.getElementById("ramen-image").src = ramen.image;
     document.getElementById("ramen-rating").textContent = ramen.rating;
-    document.getElementsByClassName("ramen-comment").textContent =ramen.comment;
+    document.getElementById("ramen-comment").textContent =ramen.comment;
 }
 
 
 
-function addSubmitListener() {
-    const form = document.getElementById("new-ramen-form");
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
-        
-        const newRamen = {
-            id: ramens.length + 1,
-            name: document.getElementById("new-name").value,
-            restaurant: document.getElementById("new-restaurant").value,
-            image: document.getElementById("new-image").value,
-            rating: document.getElementById("new-rating").value,
-            comment: document.getElementById("new-comment").value
-        };
-
-        ramens.push(newRamen);
-        displayRamens();
-        form.reset();
-    });
-}
-
-function addEditListener() {
-    const editForm = document.getElementById("edit-ramen-form");
-    editForm.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        if (selectedRamen) {
-            selectedRamen.rating = document.getElementById("edit-rating").value;
-            selectedRamen.comment = document.getElementById("edit-comment").value;
-
-            handleClick(selectedRamen);
-            editForm.reset();
-        }
-    });
-}
-
-
-function addDeleteListener() {
-    const deleteButton = document.getElementById("delete-ramen");
-    deleteButton.addEventListener("click", function () {
-        if (selectedRamen) {
-            const index = ramens.findIndex(ramen => ramen.id === selectedRamen.id);
-            if (index !== -1) {
-                ramens.splice(index, 1);
-                displayRamens();
-            }
-        }
-    });
-}
 
 
 
-// Initialize the app
+
 function main() {
     displayRamens();
-    addSubmitListener();
-    addEditListener();
-    addDeleteListener();
     
 }
 
 document.addEventListener("DOMContentLoaded", main);
-

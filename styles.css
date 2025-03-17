@@ -70,7 +70,7 @@ body{
 #form1{
     margin: 0 auto;
     width:500px;
-    height: 600px;
+    height: 700px;
     background: #1b1b32;
     color: #f5f6f7;
     font-family: Tahoma;
@@ -82,7 +82,7 @@ fieldset{
     margin: 0 auto;
     border: none;
     width:350px;
-    height: 500px;
+    height: 690px;
     border-bottom: 3px solid #3b3b4f;
 }
 
@@ -92,9 +92,103 @@ label{
     padding: 5px;
 }
 
+#new-ramen-form input, 
+#new-ramen-form textarea, 
+#new-ramen-form button {
+    width: 90%;  
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #d35400;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#new-ramen-form textarea {
+    resize: none;  
+    height: 80px;
+}
+
+#new-ramen-form button {
+    background-color: #d35400;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#new-ramen-form button:hover {
+    background-color: #a84300;
+}
+
+
 input{
     display: flex;
     margin-top: 10px;
     padding: 10px;
     
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #d35400;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #d35400;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a84300;
+}
+
+#det {
+    margin: 20px auto;
+    width: 500px;
+    padding: 20px;
+    background: #f8d7a3;
+    color: #5a2d0c;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#det h2 {
+    margin-bottom: 15px;
+    color: #8b4513;
+}
+
+#edit-ramen-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#edit-ramen-form input, 
+#edit-ramen-form button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #b36b00;
+    border-radius: 5px;
+}
+
+#edit-ramen-form button {
+    background-color: #8b4513;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#edit-ramen-form button:hover {
+    background-color: #65320e;
+}
+
+.one{
+    text-align: center;
 }

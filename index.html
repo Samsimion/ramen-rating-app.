@@ -30,23 +30,33 @@
 
         <!-- add ramen form-->
          <div id="form1">
-            <h1>Add new ramen</h1>
-         <p> please fill in the form to give us a rating</p>
-         <form id="new-ramen-form">
-            <fieldset>
-                <!--ABCDEFGHIJKLMNOPQRSTUVWXYZ-->
+                <h1 class="one">Add new ramen</h1>
+                <p class="one"> please fill in the form to give us a rating</p>
+                <form id="new-ramen-form">
+                    <fieldset>
+                        <!--ABCDEFGHIJKLMNOPQRSTUVWXYZ-->
 
-                <label for="Name1"> Name:<input id="new-name" type="text" placeholder="enter your name" required /></label>
-                <label for="Restaurant1">Restaurant: <input id="new-restaurant" type="text" placeholder="simons restaurant" required/></label>
-                <label for="Image1">Image: <input id="new-image" type="text" placeholder="enter image address here" required/></label>
-                <label for ="rating1"> Rating: <input id="new-rating" type="number" min="1" max="10" placeholder=""  required/></label>
-                <label for="comment1">Comment: <textarea id="new-comment" rows="5" cols="15" placeholder="plz leave a feedback comment"  required></textarea></label>
-                <button type="submit">Submit</button>
+                        <label for="Name1"> Name:<input id="new-name" type="text" placeholder="enter your name" required /></label>
+                        <label for="Restaurant1">Restaurant: <input id="new-restaurant" type="text" placeholder="simons restaurant" required/></label>
+                        <label for="Image1">Image: <input id="new-image" type="text" placeholder="enter image address here" required/></label>
+                        <label for ="rating1"> Rating: <input id="new-rating" type="number" min="1" max="10" placeholder=""  required/></label>
+                        <label for="comment1">Comment: <textarea id="new-comment" rows="5" cols="15" placeholder="plz leave a feedback comment"  required></textarea></label>
+                        <button type="submit">Submit</button>
 
-            </fieldset>
+                    </fieldset>
 
-         </form>
+                </form>
          </div>
+
+
+         <div id="det">
+            <h2>Edit Ramen Details</h2>
+            <form id="edit-ramen-form">
+            <input type="number" id="edit-rating" placeholder="New Rating (1-10)" min="1" max="10" required>
+            <input type="text" id="edit-comment" placeholder="New Comment" required>
+            <button type="submit">Update Ramen</button>
+            </form>
+        </div>
 
         
 
