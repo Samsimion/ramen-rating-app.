@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    background-color:#ffe5b4;
+    width: 100%;
+    color:darkred;
+    
+}
+
+#header{
+   
+    width:100%;
+    height:50px;
+    background-color: black;
+    align-items: center;
+    color: blanchedalmond;
+
+}
+
+#header h1{
+    position: relative;
+    top: 0;
+    margin-top: 0;
+
+}
+
+.heading{
+    text-align: center;
+    font-weight: 600px;
+
+}
+
+#ram{
+    text-align: center;
+}
+#ramen-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#ramen-menu img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#ramen-menu img:hover {
+    transform: scale(1.1);
+}
+
+#ramen-detail {
+    margin-top: 20px;
+}
+
+#ramen-detail img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+#form1{
+    margin: 0 auto;
+    width:500px;
+    height: 600px;
+    background: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+
+fieldset{
+    margin: 0 auto;
+    border: none;
+    width:350px;
+    height: 500px;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+label{
+    display: block;
+    margin:10px;
+    padding: 5px;
+}
+
+input{
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe5b4;
+}
+
+h1 {
+    color: #d35400;
+}
+
+#ramen-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#ramen-menu img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#ramen-menu img:hover {
+    transform: scale(1.1);
+}
+
+#ramen-detail {
+    margin-top: 20px;
+}
+
+#ramen-detail img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #d35400;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #d35400;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a84300;
+}*/
