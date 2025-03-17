@@ -74,6 +74,30 @@ function addEditListener() {
     });
 }
 
+function addDeleteListener() {
+    const deleteButton = document.getElementById("delete-ramen");
+    deleteButton.addEventListener("click", function () {
+        if (selectedRamen) {
+            const index = ramens.findIndex(ramen => ramen.id === selectedRamen.id);
+            if (index !== -1) {
+                ramens.splice(index, 1);
+                displayRamens();
+
+                
+                if (ramens.length > 0) {
+                    handleClick(ramens[0]);
+                } else {
+                    document.getElementById("ramen-name").textContent = "No Ramen Available";
+                    document.getElementById("ramen-restaurant").textContent = "";
+                    document.getElementById("ramen-image").src = "";
+                    document.getElementById("ramen-rating").textContent = "";
+                    document.getElementById("ramen-comment").textContent = "";
+                }
+            }
+        }
+    });
+}
+
 
 
 
@@ -84,6 +108,7 @@ function main() {
     displayRamens();
     addSubmitListener();
     addEditListener();
+    addDeleteListener();
     
 }
 
