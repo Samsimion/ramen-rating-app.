@@ -38,6 +38,26 @@ function handleClick(ramen){
     document.getElementById("ramen-comment").textContent =ramen.comment;
 }
 
+function addSubmitListener() {
+    const form = document.getElementById("new-ramen-form");
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        
+        const newRamen = {
+            id: ramens.length + 1,
+            name: document.getElementById("new-name").value,
+            restaurant: document.getElementById("new-restaurant").value,
+            image: document.getElementById("new-image").value,
+            rating: document.getElementById("new-rating").value,
+            comment: document.getElementById("new-comment").value
+        };
+
+        ramens.push(newRamen);
+        displayRamens();
+        form.reset();
+    });
+}
+
 
 
 
@@ -46,6 +66,7 @@ function handleClick(ramen){
 
 function main() {
     displayRamens();
+    addSubmitListener();
     
 }
 
